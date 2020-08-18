@@ -27,6 +27,9 @@ window.addEventListener( 'load', () => {
 
         let socket = io( '/stream' );
 
+
+
+
         var socketId = '';
         var myStream = '';
         var screen = '';

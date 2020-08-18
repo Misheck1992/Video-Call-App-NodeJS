@@ -1,4 +1,5 @@
 const stream = ( socket ) => {
+
     socket.on( 'subscribe', ( data ) => {
         //subscribe/join a room
         socket.join( data.room );

@@ -15,5 +15,7 @@ app.get( '/', ( req, res ) => {
 
 
 io.of( '/stream' ).on( 'connection', stream );
+const port = process.env.PORT || 3009;
+server.listen(port);
 
-server.listen( 3000 );
+// server.listen( 3000,'192.168.8.114' || 'localhost' );
